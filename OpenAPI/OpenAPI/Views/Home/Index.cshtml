@@ -1,0 +1,198 @@
+﻿@model DatasetService.Cheese
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Cheese Details</h1>
+
+<div>
+    <h4>Cheese</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CheeseId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CheeseId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CheeseNameEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CheeseNameEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CheeseNameFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CheeseNameFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManufacturerNameEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManufacturerNameEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManufacturerNameFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManufacturerNameFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManufacturerProvCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManufacturerProvCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManufacturingTypeEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManufacturingTypeEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManufacturingTypeFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManufacturingTypeFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WebSiteEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WebSiteEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WebSiteFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WebSiteFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FatContentPercent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FatContentPercent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MoisturePercent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MoisturePercent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParticularitiesEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParticularitiesEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParticularitiesFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParticularitiesFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FlavourEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FlavourEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FlavourFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FlavourFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CharacteristicsEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CharacteristicsEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CharacteristicsFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CharacteristicsFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RipeningEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RipeningEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RipeningFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RipeningFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Organic)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Organic)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryTypeEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryTypeEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryTypeFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryTypeFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilkTypeEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilkTypeEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilkTypeFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilkTypeFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilkTreatmentTypeEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilkTreatmentTypeEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilkTreatmentTypeFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilkTreatmentTypeFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RindTypeEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RindTypeEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RindTypeFr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RindTypeFr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastUpdateDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastUpdateDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CheeseId }) |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Fetch Data From Web";
+}
+
+@{
+    var res = ViewData.Model;
+    if (res == 1)
+    {
+
+        <p>Data Fetched Successfully !!</p>
+    }
+    else
+    {
+        <p>Error Fetching data</p>
+    }
+}

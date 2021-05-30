@@ -1,0 +1,178 @@
+﻿@model DatasetService.Cheese
+
+@{
+    ViewData["Title"] = "Edit Cheese";
+}
+
+<h1>Edit</h1>
+
+<h4>Cheese</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="CheeseId" class="control-label"></label>
+                <input asp-for="CheeseId" class="form-control" />
+                <span asp-validation-for="CheeseId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="CheeseNameEn" class="control-label"></label>
+                <input asp-for="CheeseNameEn" class="form-control" />
+                <span asp-validation-for="CheeseNameEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheeseNameFr" class="control-label"></label>
+                <input asp-for="CheeseNameFr" class="form-control" />
+                <span asp-validation-for="CheeseNameFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturerNameEn" class="control-label"></label>
+                <input asp-for="ManufacturerNameEn" class="form-control" />
+                <span asp-validation-for="ManufacturerNameEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturerNameFr" class="control-label"></label>
+                <input asp-for="ManufacturerNameFr" class="form-control" />
+                <span asp-validation-for="ManufacturerNameFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturerProvCode" class="control-label"></label>
+                <input asp-for="ManufacturerProvCode" class="form-control" />
+                <span asp-validation-for="ManufacturerProvCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturingTypeEn" class="control-label"></label>
+                <input asp-for="ManufacturingTypeEn" class="form-control" />
+                <span asp-validation-for="ManufacturingTypeEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturingTypeFr" class="control-label"></label>
+                <input asp-for="ManufacturingTypeFr" class="form-control" />
+                <span asp-validation-for="ManufacturingTypeFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WebSiteEn" class="control-label"></label>
+                <input asp-for="WebSiteEn" class="form-control" />
+                <span asp-validation-for="WebSiteEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WebSiteFr" class="control-label"></label>
+                <input asp-for="WebSiteFr" class="form-control" />
+                <span asp-validation-for="WebSiteFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatContentPercent" class="control-label"></label>
+                <input asp-for="FatContentPercent" class="form-control" />
+                <span asp-validation-for="FatContentPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoisturePercent" class="control-label"></label>
+                <input asp-for="MoisturePercent" class="form-control" />
+                <span asp-validation-for="MoisturePercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParticularitiesEn" class="control-label"></label>
+                <input asp-for="ParticularitiesEn" class="form-control" />
+                <span asp-validation-for="ParticularitiesEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParticularitiesFr" class="control-label"></label>
+                <input asp-for="ParticularitiesFr" class="form-control" />
+                <span asp-validation-for="ParticularitiesFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FlavourEn" class="control-label"></label>
+                <input asp-for="FlavourEn" class="form-control" />
+                <span asp-validation-for="FlavourEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FlavourFr" class="control-label"></label>
+                <input asp-for="FlavourFr" class="form-control" />
+                <span asp-validation-for="FlavourFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CharacteristicsEn" class="control-label"></label>
+                <input asp-for="CharacteristicsEn" class="form-control" />
+                <span asp-validation-for="CharacteristicsEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CharacteristicsFr" class="control-label"></label>
+                <input asp-for="CharacteristicsFr" class="form-control" />
+                <span asp-validation-for="CharacteristicsFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RipeningEn" class="control-label"></label>
+                <input asp-for="RipeningEn" class="form-control" />
+                <span asp-validation-for="RipeningEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RipeningFr" class="control-label"></label>
+                <input asp-for="RipeningFr" class="form-control" />
+                <span asp-validation-for="RipeningFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Organic" class="control-label"></label>
+                <input asp-for="Organic" class="form-control" />
+                <span asp-validation-for="Organic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryTypeEn" class="control-label"></label>
+                <input asp-for="CategoryTypeEn" class="form-control" />
+                <span asp-validation-for="CategoryTypeEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryTypeFr" class="control-label"></label>
+                <input asp-for="CategoryTypeFr" class="form-control" />
+                <span asp-validation-for="CategoryTypeFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilkTypeEn" class="control-label"></label>
+                <input asp-for="MilkTypeEn" class="form-control" />
+                <span asp-validation-for="MilkTypeEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilkTypeFr" class="control-label"></label>
+                <input asp-for="MilkTypeFr" class="form-control" />
+                <span asp-validation-for="MilkTypeFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilkTreatmentTypeEn" class="control-label"></label>
+                <input asp-for="MilkTreatmentTypeEn" class="form-control" />
+                <span asp-validation-for="MilkTreatmentTypeEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilkTreatmentTypeFr" class="control-label"></label>
+                <input asp-for="MilkTreatmentTypeFr" class="form-control" />
+                <span asp-validation-for="MilkTreatmentTypeFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RindTypeEn" class="control-label"></label>
+                <input asp-for="RindTypeEn" class="form-control" />
+                <span asp-validation-for="RindTypeEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RindTypeFr" class="control-label"></label>
+                <input asp-for="RindTypeFr" class="form-control" />
+                <span asp-validation-for="RindTypeFr" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="LastUpdateDate" class="control-label"></label>
+                <input asp-for="LastUpdateDate" class="form-control" />
+                <span asp-validation-for="LastUpdateDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

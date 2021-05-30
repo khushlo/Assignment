@@ -1,0 +1,213 @@
+﻿@model IEnumerable<DatasetService.Cheese>
+
+@{
+    ViewData["Title"] = "Cheese List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="FetchDataFromWeb">Refresh data</a>
+    <pre>
+        @Html.ActionLink("Create", "Create") 
+        @Html.ActionLink("DeleteAll", "DeleteAll") 
+    </pre>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CheeseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheeseNameEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheeseNameFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufacturerNameEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufacturerNameFr)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.ManufacturerProvCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufacturingTypeEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufacturingTypeFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WebSiteEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WebSiteFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatContentPercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MoisturePercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParticularitiesEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParticularitiesFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlavourEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlavourFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CharacteristicsEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CharacteristicsFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RipeningEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RipeningFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Organic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryTypeEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryTypeFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilkTypeEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilkTypeFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilkTreatmentTypeEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilkTreatmentTypeFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RindTypeEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RindTypeFr)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdateDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheeseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheeseNameEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheeseNameFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManufacturerNameEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManufacturerNameFr)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.ManufacturerProvCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManufacturingTypeEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManufacturingTypeFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebSiteEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebSiteFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FatContentPercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoisturePercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParticularitiesEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParticularitiesFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlavourEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlavourFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CharacteristicsEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CharacteristicsFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RipeningEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RipeningFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Organic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryTypeEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryTypeFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilkTypeEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilkTypeFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilkTreatmentTypeEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilkTreatmentTypeFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RindTypeEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RindTypeFr)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdateDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.CheeseId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CheeseId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CheeseId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
