@@ -62,6 +62,7 @@ namespace DatasetService
             catch (Exception ex)
             {
                 //TODo: Handle Error Logs
+                throw ex;
             }
             return Task.FromResult(0);
         }
