@@ -1,9 +1,0 @@
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\bin\Debug\netcoreapp3.1\DatasetService.deps.json
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\bin\Debug\netcoreapp3.1\DatasetService.dll
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\bin\Debug\netcoreapp3.1\DatasetService.pdb
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.AssemblyInfoInputs.cache
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.AssemblyInfo.cs
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.csproj.CoreCompileInputs.cache
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.dll
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.pdb
-C:\Users\Khushlo\Desktop\Assignment\OpenAPI\DatasetService\obj\Debug\netcoreapp3.1\DatasetService.csprojAssemblyReference.cache
