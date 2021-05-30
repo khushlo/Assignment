@@ -99,5 +99,10 @@ namespace OpenAPI.Controllers
             var res = objDataAccess.InsertBulkData(data.Result);
             return View("FetchData", res.Result);
         }
+
+        public string GetConnString()
+        {
+            return Utility.CONNSTRING;
+        }
     }
 }
